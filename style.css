@@ -1,0 +1,78 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    width: 75%;
+    margin-left: 10%;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: x-large;
+}
+
+.addBtn {
+    background-color: #BF4A61;
+    height: 30px;
+    color: #ffffff;
+    border: 1px;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 0px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.addbtn:hover {
+    background-color: #A63A50;
+}
+
+.tableContainer {
+    margin-top: 0px;
+}
+
+.tableContainer {
+    overflow-x: auto;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tableContainer table thead {
+    background-color: #f8f9fa;
+}
+
+.tableContainer table th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.tableContainer table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #e9ecef;
+    color: #444;
+}
+
+.tableContainer table tbody tr:hover {
+    background-color: #f8f9fa;
+}
