@@ -157,3 +157,7 @@ header {
     border-color: #79CD7F;
     box-shadow: 0 0 0 2px rgba(121, 205, 127, 0.2);
 }
+
+.successMsg {
+    display: none;
+}

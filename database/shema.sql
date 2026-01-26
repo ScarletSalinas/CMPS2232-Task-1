@@ -4,7 +4,7 @@
 CREATE DATABASE IF NOT EXISTS employee_db;
 USE employee_db;
 
--- Drop tables if they exist (for clean setup)
+-- Drop tables if they exist
 DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS departments;
 
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS employees (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     dept_id INT,
-    hire_date DATE DEFAULT (CURRENT_DATE),
+    hire_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     -- Foreign key constraint
     FOREIGN KEY (dept_id) REFERENCES departments(dept_id) ON DELETE SET NULL

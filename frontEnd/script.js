@@ -9,7 +9,8 @@
 const addBtn = document.getElementById("addEmployeeBtn");
 const form = document.getElementById("addEmployeeForm");
 const cancelBtn = document.querySelector(".cancelBtn");
-const employeeForm = document.getElementById('employeeForm');
+const employeeForm = document.getElementById("employeeForm");
+const successMsg = document.getElementsByClassName("successMsg");
 
 // Open form when add button is clicked
 addBtn.addEventListener("click", function() {
@@ -28,5 +29,29 @@ window.addEventListener("click", function(event) {
     if(event.target === form) {
         form.style.display = "none";
         employeeForm.reset();
+        successMsg.style.display = "none";
     }
 });
+
+// Form submission handling
+employeeForm.addEventListener('submit', function(event) {
+    
+    // Get form values
+    const firstName = document.getElementById('fName').value.trim();
+    const lastName = document.getElementById('lName').value.trim();
+    const department = document.getElementById('dept').value;
+    
+    // Log data (will be sent to database later???)
+    console.log('New Employee:', {
+        firstName: firstName,
+        lastName: lastName,
+        department: department
+    });
+
+    //show successful submission msg
+    successMsg.style.display = "block";
+
+    //reset form
+});
+
+
