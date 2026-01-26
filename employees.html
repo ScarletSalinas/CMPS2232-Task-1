@@ -21,6 +21,7 @@
 
     <main>
 
+        <!-- Table displaying current employees -->
         <div class="table-header">
             <p>Manage Employees</p>
             <button class="addBtn" id="addEmployeeBtn">+ Add Employee</button>
@@ -42,10 +43,41 @@
                 </tbody>
             </table>
         </div>
-
-        
-        
     </main>
+
+    <!-- Add employee form -->
+    <div id="addEmployeeForm" class="form">
+        <div class="formContent">
+            <h3>Add New Employee</h3>
+
+            <form id="employeeForm">
+                <div>
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" required>
+                </div>
+
+                <div>
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" required>                    
+                </div>
+
+                <div>
+                    <label for="dept">Department:</label>
+                    <select id="dept" required>
+                        <option>Engineering</option>
+                        <option>Marketing</option>
+                        <option>Sales</option>
+                        <option>HR</option>
+                    </select>
+                </div>
+
+                <div class="formBtns">
+                    <button type="submit" class="save-btn">Save</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
     
 </body>
 </html>
