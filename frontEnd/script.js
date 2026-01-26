@@ -3,6 +3,8 @@
 /*Task 1: Full-Time Employee Management System */
 /*File: script.js (Front End) */
 
+//console.log("ok");
+
 // Get form elements
 const addBtn = document.getElementById("addEmployeeBtn");
 const form = document.getElementById("addEmployeeForm");
