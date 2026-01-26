@@ -15,8 +15,16 @@ addBtn.addEventListener("click", function() {
     document.getElementById('firstName').focus(); //Focus on fName field
 });
 
-// CLose form when cancel is clicked
+// Close form when cancel is clicked
 cancelBtn.addEventListener("click", function() {
     form.style.display = "none";
     employeeForm.reset();
+});
+
+// Close form if clicked oustside form
+window.addEventListener("click", function(event) {
+    if(event.target === form) {
+        form.style.display = "none";
+        employeeForm.reset();
+    }
 });
