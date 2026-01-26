@@ -4,7 +4,11 @@
 CREATE DATABASE IF NOT EXISTS employee_db;
 USE employee_db;
 
--- Create departments table first (parent table)
+-- Drop tables if they exist (for clean setup)
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS departments;
+
+-- Create departments table
 CREATE TABLE IF NOT EXISTS departments (
     dept_id INT PRIMARY KEY AUTO_INCREMENT,
     dept_name VARCHAR(50) UNIQUE NOT NULL,
@@ -22,5 +26,7 @@ CREATE TABLE IF NOT EXISTS employees (
     -- Foreign key constraint
     FOREIGN KEY (dept_id) REFERENCES departments(dept_id) ON DELETE SET NULL
 );
+
+--index for searching?
 
 
