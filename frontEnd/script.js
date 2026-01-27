@@ -15,7 +15,7 @@ const successMsg = document.getElementsByClassName("successMsg");
 // Open form when add button is clicked
 addBtn.addEventListener("click", function() {
     form.style.display = "block";
-    document.getElementById('firstName').focus(); //Focus on fName field
+    //document.getElementById('firstName').focus(); //Focus on fName field
 });
 
 // Close form when cancel is clicked
