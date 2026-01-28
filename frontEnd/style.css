@@ -158,6 +158,10 @@ header {
     box-shadow: 0 0 0 2px rgba(121, 205, 127, 0.2);
 }
 
-.successMsg {
-    display: none;
+
+
+#statusMsg {
+    text-align: center;
+    font-weight: 300;
+
 }
