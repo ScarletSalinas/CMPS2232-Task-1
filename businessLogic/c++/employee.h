@@ -1,5 +1,7 @@
-// Employee.h
-// Declaration of class Employee
+//Scarlet Salinas
+//Task 1: Full-Time Employee Management System
+//File: employee.h
+// Implementation of Employee class member functions
 // Member functions defined in file: Employee.cpp
 
 #ifndef EMPLOYEE_H

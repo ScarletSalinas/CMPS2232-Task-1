@@ -1,5 +1,8 @@
-// Employee.cpp
+//Scarlet Salinas
+//Task 1: Full-Time Employee Management System
+//File: employee.cpp
 // Implementation of Employee class member functions
+//Declaration of Employee Class: employee.h
 
 #include "employee.h"
 #include <iostream>
