@@ -83,7 +83,7 @@ employeeForm.addEventListener("submit", function(event) {
     //not sure abt timeout to close form maybe just an x to close it 
     setTimeout(function() {
         form.style.display = "none";
-    }, 2000);
+    }, 1000);
 
     employeeForm.reset();
 });
